@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import './index.css';
 
 // Componente de estado modificado //
 class App extends React.Component{
