@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className = "container">
-          <Navbar />,
+          <Navbar />
           <PathRoutes />
       </div>
 

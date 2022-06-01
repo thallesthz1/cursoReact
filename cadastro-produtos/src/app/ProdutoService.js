@@ -8,15 +8,15 @@ export default class ProdutoService {
     validar = (produto) => {
         const errors = []
 
-        if(!produto.nome){
+        if(produto.nome === ""){
             errors.push('O campo "Nome" é obrigatório.')
         }
 
-        if(!produto.sku){
+        if(produto.sku === ""){
             errors.push('O campo "SKU" é obrigatório.')
         }
 
-        if(!produto.preço || produto.preco <= 0){
+        if(!produto.preco || produto.preco <= 0){
             errors.push('O campo "Preço" deve ser maior que zero(0).')
         }
 

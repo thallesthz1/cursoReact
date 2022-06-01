@@ -59,7 +59,6 @@ class CadastroProduto extends Component {
                     <div className="card-body">
 
                         {this.state.sucesso &&
-
                             <div class="alert alert-dismissible alert-success">
                                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                                 <strong>Bem feito!</strong> Cadastro realizado com sucesso! <a href="#" class="alert-link" />.
@@ -67,9 +66,7 @@ class CadastroProduto extends Component {
 
                         }
 
-                        {this.state.errors.lenght > 0 &&
-
-                        this.state.errors.map (msg => {
+                        {this.state.errors.map (msg => {
                             return(
                                 <div class="alert alert-dismissible alert-danger">
                                     <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
